@@ -5,4 +5,4 @@ JUGABILIDAD
 Se utilizaran las teclas W.A.S.D para mover al JUGADOR, mientras que con la tecla de ESPACIO podran disparar a los astronauitas enemigos.
 
 GITHUB DESCARGA
-Se encuentra en la branch Parcial-3 en la carpeta: Github -> Carpeta llamada: Parcial3-MotoresDeVideojuegos-UTECA -> Carpeta: JUEGO_COMPLETO -> Y el .exe SPACXE EMERGENCY es el juego.
+Se encuentra en la branch Parcial-3 en la carpeta: Github -> Carpeta llamada: Juego3-SpaceEmergency -> Carpeta: JUEGO_COMPLETO -> Y el .exe SPACXE EMERGENCY es el juego.
