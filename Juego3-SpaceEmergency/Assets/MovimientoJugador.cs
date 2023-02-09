@@ -17,9 +17,12 @@ public class MovimientoJugador : MonoBehaviour
     [Header("Salto")]
     [SerializeField] private float fuerzaDeSalto;
     [SerializeField] private LayerMask queEsSuelo;
+   
     [SerializeField] private Transform controladorSuelo;
+    
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private bool enSuelo;
+    
     private bool salto = false;
 
     //Animacion
@@ -47,6 +50,8 @@ public class MovimientoJugador : MonoBehaviour
     {
         enSuelo = Physics2D.OverlapBox(controladorSuelo.position, dimensionesCaja, 0f, queEsSuelo);
         animator.SetBool("enSuelo",enSuelo);
+
+
         //mover
         Mover(movimientoHorizontal * Time.fixedDeltaTime, salto);
 
@@ -76,10 +81,8 @@ public class MovimientoJugador : MonoBehaviour
 
     private void Girar()
     {
-        mirandoDerecha = !mirandoDerecha;
-        Vector3 escala = transform.localScale;
-        escala.x *= -1;
-        transform.localScale = escala;
+       mirandoDerecha = !mirandoDerecha;
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
     }
 
     private void OnDrawGizmos()
